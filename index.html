@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вкусный минимум - Простые рецепты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Вкусный минимум</h1>
+        <p>Простые рецепты для занятых людей</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="recipes.html">Рецепты</a></li>
+                <li><a href="suggest_recipe.html">Предложить рецепт</a></li>
+                <li><a href="#about">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="featured-recipes">
+            <h2>Рецепт дня</h2>
+            <div class="recipe">
+                <alt="Паста с томатами и базиликом">
+                <h3>Паста с томатами и базиликом (15 минут)</h3>
+                <p>Простой и вкусный рецепт итальянской пасты с сочными томатами и ароматным базиликом.</p>
+                <a href="recipe_pasta.html">Посмотреть рецепт</a>
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2>Категории рецептов</h2>
+            <div class="category">
+                <img src="breakfast.jpg" alt="Завтраки">
+                <h3><a href="recipes.html?category=breakfast">Завтраки</a></h3>
+            </div>
+            <div class="category">
+                <img src="lunch.jpg" alt="Обеды">
+                <h3><a href="recipes.html?category=lunch">Обеды</a></h3>
+            </div>
+            <div class="category">
+                <img src="dinner.jpg" alt="Ужины">
+                <h3><a href="recipes.html?category=dinner">Ужины</a></h3>
+            </div>
+        </section>
+    </main>
+
+    <footer id="about">
+        <p>&copy; 2024 Вкусный минимум. Все права защищены.</p>
+        <p>Связаться с нами: <a href="mailto:info@vkusniyminimum.ru">info@vkusniyminimum.ru</a></p>
+    </footer>
+    <script src="script.js"></script>
+	<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+      .then(() => console.log('Service Worker зарегистрирован'))
+      .catch(err => console.log('Ошибка:', err));
+  }
+</script>
+</body>
+</html>

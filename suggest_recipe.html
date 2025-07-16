@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Предложить рецепт - Вкусный минимум</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Вкусный минимум</h1>
+        <p>Простые рецепты для занятых людей</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="recipes.html">Рецепты</a></li>
+                <li><a href="suggest_recipe.html">Предложить рецепт</a></li>
+                <li><a href="#about">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-form">
+            <h2>Предложить свой рецепт</h2>
+            <p>Поделитесь с нами своим любимым простым рецептом!</p>
+            <form action="#" method="post">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="recipe_name">Название рецепта:</label>
+                <input type="text" id="recipe_name" name="recipe_name" required>
+
+                <label for="ingredients">Ингредиенты:</label>
+                <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+
+                <label for="instructions">Инструкции:</label>
+                <textarea id="instructions" name="instructions" rows="8" required></textarea>
+
+                <button type="submit">Отправить рецепт</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="about">
+        <p>&copy; 2024 Вкусный минимум. Все права защищены.</p>
+        <p>Связаться с нами: <a href="mailto:info@vkusniyminimum.ru">info@vkusniyminimum.ru</a></p>
+    </footer>
+</body>
+</html>
